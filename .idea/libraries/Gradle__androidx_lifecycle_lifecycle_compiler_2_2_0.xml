@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-compiler:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-compiler/2.2.0/65e8be2b6505e1236a30118a59c8e25c505cfbf7/lifecycle-compiler-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-compiler/2.2.0/4fef024ed2a30b7b95d6c1f771ba244af136d2bc/lifecycle-compiler-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
