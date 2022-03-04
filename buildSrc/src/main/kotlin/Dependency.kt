@@ -1,5 +1,5 @@
 object Kotlin {
-    const val standardLibrary = "1.4.10"
+    const val standardLibrary = "1.5.31"
     const val coroutines = "1.3.9"
 }
 
