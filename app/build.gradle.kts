@@ -1,6 +1,9 @@
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    id(BuildPlugins.androidApplication)
+    id(BuildPlugins.kotlinAndroid)
+    id(BuildPlugins.kotlinKapt)
+    id(BuildPlugins.androidHilt)
+    id(BuildPlugins.kotlinParcelize)
 }
 
 android {
@@ -14,7 +17,6 @@ android {
         versionName = AndroidClient.versionName
         testInstrumentationRunner = AndroidClient.testRunner
         vectorDrawables.useSupportLibrary = AndroidClient.useSupportLibrary
-
     }
 
     buildTypes {
@@ -31,6 +33,9 @@ android {
         jvmTarget = "1.8"
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -49,10 +54,14 @@ dependencies {
     implementation(Libraries.androidAnnotations)
     implementation(Libraries.glide)
     implementation(Libraries.hilt)
-//    implementation(Libraries.hiltCompiler)
     implementation(Libraries.retrofit)
     implementation(Libraries.okHttpLoggingInterceptor)
     implementation(Libraries.constraintLayout)
+    kapt(Libraries.hiltCompilerKtx)
+
+    implementation(project(path = SubModule.data))
+    implementation(project(path = SubModule.domain))
+
 
     // Unit/Android tests dependencies
     testImplementation(TestLibraries.junit4)
