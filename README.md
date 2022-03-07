@@ -1,1 +1,1 @@
-# NoteApp
+# NoteApp (Android Clean Architechture)
