@@ -1,12 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8b5df2-001c-4bf3-a599-e26517b59642" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Variants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/androidTest/java/com/lxn/data/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/test/java/com/lxn/data/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/androidTest/java/com/lxn/domain/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/com/lxn/domain/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/src/androidTest/java/com/lxn/platform/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/core/view/BaseActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/core/view/BaseBehavior.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/core/view/BaseFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/src/test/java/com/lxn/platform/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/UserDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/NoteApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/NoteApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/UserDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/noVersion/buildSrc.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/platform/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/AndroidClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/AndroidSdk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/BuildPlugins$Versions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/BuildPlugins.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DevLibraries$Versions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DevLibraries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/Kotlin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/Libraries$Versions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/Libraries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/META-INF/buildSrc.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/SubModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/TestLibraries$Versions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/TestLibraries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/buildSrcjar-classes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/libs/buildSrc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/pluginUnderTestMetadata/plugin-under-test-metadata.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/reports/plugin-development/validation-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/source-roots/buildSrc/source-roots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/MyClass.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/MyClass.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +211,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -64,7 +234,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="memory.settings.postsync.last.time.stamp" value="1646463790026" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -233,5 +403,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/NoteApplication.kt</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

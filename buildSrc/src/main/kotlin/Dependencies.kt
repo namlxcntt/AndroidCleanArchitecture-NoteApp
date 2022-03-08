@@ -1,4 +1,6 @@
 import org.gradle.kotlin.dsl.project
+import java.text.SimpleDateFormat
+import java.util.*
 
 object Kotlin {
     const val standardLibrary = "1.5.30"
@@ -8,7 +10,7 @@ object Kotlin {
 
 object AndroidSdk {
     const val min = 24
-    const val compile = 31
+    const val compile = 32
     const val target = compile
 }
 
@@ -41,13 +43,15 @@ object BuildPlugins {
     const val gmsGoogle = "com.google.gms.google-services"
     const val javaPlugins = "java-library"
     const val kotlinJVM = "org.jetbrains.kotlin.jvm"
+    const val androidLibrary = "com.android.library"
+    const val kotlinAndroidJB = "org.jetbrains.kotlin.android"
 }
 
 object Libraries {
     private object Versions {
         const val hilt = BuildPlugins.Versions.hilt
         const val hiltViewModels = "1.0.0-alpha03"
-        const val appCompat = "1.2.0"
+        const val appCompat = "1.4.1"
         const val constraintLayout = "2.0.2"
         const val recyclerView = "1.1.0"
         const val cardView = "1.0.0"
@@ -59,6 +63,8 @@ object Libraries {
         const val glide = "4.11.0"
         const val retrofit = "2.9.0"
         const val okHttpLoggingInterceptor = "4.9.0"
+        const val roomVersion = "2.4.2"
+
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.standardLibrary}"
@@ -81,6 +87,9 @@ object Libraries {
     const val hiltViewModels = "androidx.hilt: hilt-lifecycle-viewmodel:${Versions.hiltViewModels}"
     const val retrofit = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     const val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttpLoggingInterceptor}"
+    const val roomDatabase = "androidx.room:room-runtime:${Versions.roomVersion}"
+    const val roomDatabaseCompiler = "androidx.room:room-compiler:${Versions.roomVersion}"
+    const val conflictGuava = "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
 }
 
 object TestLibraries {
@@ -111,7 +120,8 @@ object TestLibraries {
 
 object SubModule {
     const val domain = ":domain"
-    const val data = ":domain"
+    const val data = ":data"
+    const val app = ":app"
 }
 
 object DevLibraries {
@@ -120,4 +130,11 @@ object DevLibraries {
     }
 
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
+}
+
+@Suppress("SimpleDateFormat")
+fun getCurrentDayTime(): String {
+    val timeCurrent = Date()
+    val dateFormat = SimpleDateFormat("dd.MM.HH.mm")
+    return dateFormat.format(timeCurrent)
 }

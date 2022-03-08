@@ -24,6 +24,40 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
+        applicationVariants.all {
+            val variant = this
+            variant.outputs
+                .map { it as com.android.build.gradle.internal.api.BaseVariantOutputImpl }
+                .forEach { output ->
+                    val outputFileName = variant.name +
+                    "_${name}" +
+                    "_versionName:${variant.versionName}" +
+                    "_${getCurrentDayTime()}.apk"
+                    output.outputFileName = outputFileName
+                }
+        }
+//
+//
+//        productFlavors {
+//            create("staging") {
+//                dimension = "feature-dimension"
+//                applicationId =AndroidClient.appId
+//                // This is field and configs staging environment
+//            }
+//
+//            create("feature-dimension") {
+//                dimension = "type"
+//                applicationId =AndroidClient.appId
+//                // This is field and configs dev environment
+//            }
+//
+//            create("product") {
+//                dimension = "feature-dimension"
+//                applicationId =AndroidClient.appId
+//                // This is field and configs product environment
+//            }
+//        }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -57,6 +91,8 @@ dependencies {
     implementation(Libraries.retrofit)
     implementation(Libraries.okHttpLoggingInterceptor)
     implementation(Libraries.constraintLayout)
+    implementation(Libraries.conflictGuava)
+
     kapt(Libraries.hiltCompilerKtx)
 
     implementation(project(path = SubModule.data))

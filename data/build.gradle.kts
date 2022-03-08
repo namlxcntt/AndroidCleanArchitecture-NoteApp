@@ -1,11 +1,24 @@
 plugins {
-    id(BuildPlugins.kotlinJVM)
+    id(BuildPlugins.androidLibrary)
+    id(BuildPlugins.kotlinAndroidJB)
+    id(BuildPlugins.kotlinKapt)
 }
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+
+android {
+    compileSdk = AndroidSdk.compile
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
-    implementation(Libraries.kotlinStdLib)
+    api (Libraries.ktxCore)
+    api (Libraries.roomDatabase)
+    annotationProcessor(Libraries.roomDatabaseCompiler)
+    kapt(Libraries.roomDatabaseCompiler)
 }
