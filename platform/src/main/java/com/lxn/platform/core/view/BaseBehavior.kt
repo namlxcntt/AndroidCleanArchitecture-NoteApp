@@ -9,6 +9,9 @@ package com.lxn.platform.core.view
 interface BaseBehavior {
     fun addViewListener()
     fun addDataObserver()
+    fun onViewLoaded()
     fun onLoading()
     fun onError()
+    fun darkModeOff()
+    fun darkModeOn()
 }

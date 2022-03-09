@@ -1,4 +1,3 @@
-import org.gradle.kotlin.dsl.project
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -9,7 +8,7 @@ object Kotlin {
 
 
 object AndroidSdk {
-    const val min = 24
+    const val min = 23
     const val compile = 32
     const val target = compile
 }
@@ -41,8 +40,6 @@ object BuildPlugins {
     const val kotlinParcelize = "kotlin-parcelize"
     const val androidHilt = "dagger.hilt.android.plugin"
     const val gmsGoogle = "com.google.gms.google-services"
-    const val javaPlugins = "java-library"
-    const val kotlinJVM = "org.jetbrains.kotlin.jvm"
     const val androidLibrary = "com.android.library"
     const val kotlinAndroidJB = "org.jetbrains.kotlin.android"
 }
@@ -59,15 +56,19 @@ object Libraries {
         const val lifecycle = "2.2.0"
         const val lifecycleExtensions = "2.1.0"
         const val annotations = "1.1.0"
-        const val ktx = "1.3.2"
+        const val ktx = "1.3.1"
         const val glide = "4.11.0"
         const val retrofit = "2.9.0"
         const val okHttpLoggingInterceptor = "4.9.0"
         const val roomVersion = "2.4.2"
+        const val calibriVersion = "3.1.1"
+        const val viewPumpVersion = "2.0.3"
 
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.standardLibrary}"
+    const val activityKtx = "androidx.activity:activity-ktx:${Versions.ktx}"
+    const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.ktx}"
     const val kotlinCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Kotlin.coroutines}"
     const val kotlinCoroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Kotlin.coroutines}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
@@ -76,6 +77,7 @@ object Libraries {
     const val lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:${Versions.lifecycle}"
     const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+    const val lifeCycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
     const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycleExtensions}"
     const val cardView = "androidx.cardview:cardview:${Versions.cardView}"
     const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
@@ -84,7 +86,10 @@ object Libraries {
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltCompilerKtx = "com.google.dagger:hilt-compiler:${Versions.hilt}"
-    const val hiltViewModels = "androidx.hilt: hilt-lifecycle-viewmodel:${Versions.hiltViewModels}"
+    const val calligraphy3 = "io.github.inflationx:calligraphy3:${Versions.calibriVersion}"
+    const val viewPump = "io.github.inflationx:viewpump:${Versions.viewPumpVersion}"
+
+    //    const val hiltViewModels = "androidx.hilt: hilt-lifecycle-viewmodel:${Versions.hiltViewModels}"
     const val retrofit = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     const val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttpLoggingInterceptor}"
     const val roomDatabase = "androidx.room:room-runtime:${Versions.roomVersion}"
@@ -122,6 +127,7 @@ object SubModule {
     const val domain = ":domain"
     const val data = ":data"
     const val app = ":app"
+    const val platform = ":platform"
 }
 
 object DevLibraries {

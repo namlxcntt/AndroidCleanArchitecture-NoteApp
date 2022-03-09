@@ -14,6 +14,13 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+    defaultConfig{
+        buildConfigField("String","SHARE_PREFERENCE_NAME","\"Note_app_share_preference\"")
+    }
 }
 
 dependencies {
@@ -29,4 +36,9 @@ dependencies {
     api(Libraries.glide)
     api(Libraries.constraintLayout)
     api(Libraries.appCompat)
+    api(Libraries.hilt)
+    kapt(Libraries.hiltCompilerKtx)
+    api(Libraries.calligraphy3)
+    api(Libraries.viewPump)
+
 }

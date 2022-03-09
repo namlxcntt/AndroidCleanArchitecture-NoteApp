@@ -1,3 +1,5 @@
+import com.android.build.gradle.internal.api.BaseVariantOutputImpl
+
 plugins {
     id(BuildPlugins.androidApplication)
     id(BuildPlugins.kotlinAndroid)
@@ -17,6 +19,8 @@ android {
         versionName = AndroidClient.versionName
         testInstrumentationRunner = AndroidClient.testRunner
         vectorDrawables.useSupportLibrary = AndroidClient.useSupportLibrary
+        buildConfigField("String","SHARE_PREFERENCE_NAME","\"Note_app_share_preference\"")
+        buildConfigField("String","DATABASE_NAME","\"note_app_database\"")
     }
 
     buildTypes {
@@ -27,36 +31,15 @@ android {
         applicationVariants.all {
             val variant = this
             variant.outputs
-                .map { it as com.android.build.gradle.internal.api.BaseVariantOutputImpl }
+                .map { it as BaseVariantOutputImpl }
                 .forEach { output ->
                     val outputFileName = variant.name +
-                    "_${name}" +
-                    "_versionName:${variant.versionName}" +
-                    "_${getCurrentDayTime()}.apk"
+                            "_${name}" +
+                            "_versionName:${variant.versionName}" +
+                            "_${getCurrentDayTime()}.apk"
                     output.outputFileName = outputFileName
                 }
         }
-//
-//
-//        productFlavors {
-//            create("staging") {
-//                dimension = "feature-dimension"
-//                applicationId =AndroidClient.appId
-//                // This is field and configs staging environment
-//            }
-//
-//            create("feature-dimension") {
-//                dimension = "type"
-//                applicationId =AndroidClient.appId
-//                // This is field and configs dev environment
-//            }
-//
-//            create("product") {
-//                dimension = "feature-dimension"
-//                applicationId =AndroidClient.appId
-//                // This is field and configs product environment
-//            }
-//        }
 
     }
     compileOptions {
@@ -92,11 +75,18 @@ dependencies {
     implementation(Libraries.okHttpLoggingInterceptor)
     implementation(Libraries.constraintLayout)
     implementation(Libraries.conflictGuava)
+    implementation(Libraries.lifeCycleRuntime)
+//    implementation(Libraries.hiltViewModels)
+    implementation(Libraries.activityKtx)
+    implementation(Libraries.fragmentKtx)
+    implementation(Libraries.calligraphy3)
+    implementation(Libraries.viewPump)
 
     kapt(Libraries.hiltCompilerKtx)
 
     implementation(project(path = SubModule.data))
     implementation(project(path = SubModule.domain))
+    implementation(project(path = SubModule.platform))
 
 
     // Unit/Android tests dependencies
@@ -114,5 +104,5 @@ dependencies {
     androidTestImplementation(TestLibraries.hiltTesting)
 
     // Development dependencies
-    debugImplementation(DevLibraries.leakCanary)
+//    debugImplementation(DevLibraries.leakCanary)
 }
