@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteAppKotlin">
         <activity
+            android:name=".features.addnote.AddNoteActivity"
+            android:exported="false" />
+        <activity
             android:name=".features.main.MainActivity"
             android:exported="true">
             <intent-filter>

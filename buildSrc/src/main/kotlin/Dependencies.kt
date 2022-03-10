@@ -94,6 +94,7 @@ object Libraries {
     const val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttpLoggingInterceptor}"
     const val roomDatabase = "androidx.room:room-runtime:${Versions.roomVersion}"
     const val roomDatabaseCompiler = "androidx.room:room-compiler:${Versions.roomVersion}"
+    const val roomKtxCoroutines = "androidx.room:room-ktx:${Versions.roomVersion}"
     const val conflictGuava = "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
 }
 

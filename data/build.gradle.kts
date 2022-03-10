@@ -19,6 +19,8 @@ android {
 dependencies {
     api (Libraries.ktxCore)
     api (Libraries.roomDatabase)
-    annotationProcessor(Libraries.roomDatabaseCompiler)
+    api (Libraries.roomKtxCoroutines)
     kapt(Libraries.roomDatabaseCompiler)
+    implementation(project(mapOf("path" to ":platform")))
+
 }

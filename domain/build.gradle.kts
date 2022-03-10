@@ -17,7 +17,11 @@ android {
 }
 
 dependencies {
-    api (Libraries.ktxCore)
-
+    api(Libraries.ktxCore)
+    api(Libraries.kotlinStdLib)
+    api(Libraries.kotlinCoroutines)
+    api(Libraries.kotlinCoroutinesAndroid)
+    implementation(project(mapOf("path" to ":data")))
+    implementation(project(mapOf("path" to ":platform")))
 
 }

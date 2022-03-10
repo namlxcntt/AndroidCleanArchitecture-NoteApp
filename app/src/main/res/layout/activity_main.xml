@@ -13,17 +13,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/medium"
         android:layout_marginTop="@dimen/medium"
-        android:text="Notes"
+        android:text="@string/notes"
         android:textAppearance="@style/TextAppearance.Text.SemiBold"
         android:textSize="@dimen/text_size_note_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/line_header"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginHorizontal="@dimen/normal"
+        android:layout_marginTop="@dimen/double_small"
+        android:background="@color/color_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_note_header" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/button"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="@dimen/size_button_header"
+        android:layout_height="@dimen/size_button_header"
+        android:layout_marginEnd="@dimen/normal"
         android:background="@drawable/button_info"
         app:layout_constraintBottom_toBottomOf="@+id/tv_note_header"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,12 +52,14 @@
         app:layout_constraintTop_toTopOf="@+id/tv_note_header" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_notes"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="@dimen/double_small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_note_header" />
+        app:layout_constraintTop_toBottomOf="@id/line_header" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add_note"
@@ -55,7 +68,7 @@
         android:layout_marginEnd="@dimen/larges"
         android:layout_marginBottom="@dimen/big"
         android:backgroundTint="@color/color_default"
-        android:contentDescription="Hello"
+        android:contentDescription="@string/fab_add_note"
         android:src="@drawable/ic_add"
         app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,6 +77,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

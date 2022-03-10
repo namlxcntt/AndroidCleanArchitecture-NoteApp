@@ -10,5 +10,6 @@
     <color name="background">#252525</color>
     <color name="color_default">#FFFFFFFF</color>
     <color name="color_transparent">#00000000</color>
+    <color name="color_bg_item_note">#990B0A0A</color>
 
 </resources>

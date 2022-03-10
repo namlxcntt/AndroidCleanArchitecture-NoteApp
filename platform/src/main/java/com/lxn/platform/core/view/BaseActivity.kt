@@ -44,9 +44,9 @@ abstract class BaseActivity<VB : ViewBinding, VM : BaseViewModel>(val bindingFac
         super.onCreate(savedInstanceState)
         binding = bindingFactory(layoutInflater)
         setContentView(binding.root)
-        addDataObserver()
         addViewListener()
         onViewLoaded()
+        addDataObserver()
     }
 
     override fun onViewLoaded() {
@@ -61,6 +61,14 @@ abstract class BaseActivity<VB : ViewBinding, VM : BaseViewModel>(val bindingFac
     }
 
     override fun addViewListener() {
+
+    }
+
+    override fun darkModeOff() {
+
+    }
+
+    override fun darkModeOn() {
 
     }
 

@@ -10,4 +10,7 @@
     <color name="background">#FFFFFFFF</color>
     <color name="color_default">#252525</color>
     <color name="color_transparent">#00000000</color>
-    </resources>
+    <color name="color_bg_item_note">#E9E9E9</color>
+    <color name="grey_text">#676767</color>
+
+</resources>

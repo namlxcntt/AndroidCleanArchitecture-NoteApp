@@ -1,11 +1,13 @@
-package com.lxn.data
+package com.lxn.data.local.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.lxn.data.local.dao.NoteDao
+import com.lxn.data.local.model.NoteCacheEntity
 
-@Database(entities = [Note::class], version = 1, exportSchema = false)
+@Database(entities = [NoteCacheEntity::class], version = 1, exportSchema = false)
 abstract class NoteAppDatabase : RoomDatabase() {
 
     abstract val noteDao: NoteDao

@@ -2,7 +2,7 @@ package com.nlx.noteappkotlin.di
 
 import android.content.Context
 import androidx.room.Room
-import com.lxn.data.NoteAppDatabase
+import com.lxn.data.local.database.NoteAppDatabase
 import com.nlx.noteappkotlin.BuildConfig
 import dagger.Module
 import dagger.Provides
@@ -20,9 +20,11 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 @Module
 object DatabaseModule {
+
     @Provides
     @Singleton
-    fun provideLocalDatabase(@ApplicationContext context: Context) : NoteAppDatabase {
-        return Room.databaseBuilder(context,NoteAppDatabase::class.java,BuildConfig.DATABASE_NAME).build()
+    fun provideLocalDatabase(@ApplicationContext context: Context): NoteAppDatabase {
+        return Room.databaseBuilder(context, NoteAppDatabase::class.java, BuildConfig.DATABASE_NAME).build()
     }
+
 }
