@@ -1,6 +1,8 @@
 package com.nlx.noteappkotlin.features.main
 
+import android.app.Activity
 import android.util.Log
+import androidx.activity.result.ActivityResult
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.lxn.domain.model.Note
@@ -27,8 +29,14 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(ActivityMa
                 adapter = notesAdapter
             }
             fabAddNote.setOnClickListener {
-                openActivity(AddNoteActivity::class.java)
+                openActivityForResult(AddNoteActivity::class.java)
             }
+        }
+    }
+
+    override fun onDataReceiverActivityForResult(activityResult: ActivityResult) {
+        if (activityResult.resultCode == Activity.RESULT_OK) {
+            viewModel.loadNotes()
         }
     }
 

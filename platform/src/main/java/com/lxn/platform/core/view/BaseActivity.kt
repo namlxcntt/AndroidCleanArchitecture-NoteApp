@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.widget.Toast
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
@@ -72,6 +74,32 @@ abstract class BaseActivity<VB : ViewBinding, VM : BaseViewModel>(val bindingFac
 
     }
 
+    /**
+     * Variable with launch activity for result new
+     * StartActivityForResult Deprecated()
+     */
+    private val launchSomeActivity =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            onDataReceiverActivityForResult(result)
+        }
+
+    open fun onDataReceiverActivityForResult(activityResult: ActivityResult) {}
+
+    /**
+     * Open Activity for result
+     */
+    fun openActivityForResult(cla: Class<*>, vararg flags: Int) {
+        val intent = Intent(this, cla)
+        for (flag in flags) {
+            intent.addFlags(flag)
+        }
+        launchSomeActivity.launch(intent)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        launchSomeActivity.unregister()
+    }
 
     @RequiresApi(Build.VERSION_CODES.FROYO)
     override fun onConfigurationChanged(configuration: Configuration) {

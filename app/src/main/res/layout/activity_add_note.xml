@@ -6,4 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".features.addnote.AddNoteActivity">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_done"
+        android:layout_width="@dimen/very_big"
+        android:layout_height="@dimen/very_big"
+        android:layout_marginEnd="@dimen/medium"
+        android:src="@drawable/ic_done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        style="@style/TextAppearance.Text.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/large"
+        android:layout_marginTop="@dimen/large"
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal"
+        android:text="@string/text_add_notes"
+        android:textSize="@dimen/text_size_big"
+        app:layout_constraintEnd_toStartOf="@+id/btn_done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal"
+        android:layout_marginEnd="@dimen/large"
+        android:background="@color/color_transparent"
+        android:ems="10"
+        android:hint="@string/text_title"
+        android:inputType="textPersonName"
+        android:padding="@dimen/normal"
+        android:textAppearance="@style/TextAppearance.Text.SemiBold"
+        android:textSize="@dimen/text_size_larges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_transparent"
+        android:gravity="start"
+        android:hint="@string/text_type_somethings"
+        android:padding="@dimen/normal"
+        android:textAppearance="@style/TextAppearance.Text.SemiBold"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_title"
+        app:layout_constraintStart_toStartOf="@+id/edt_title"
+        app:layout_constraintTop_toBottomOf="@+id/edt_title" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

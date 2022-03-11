@@ -3,5 +3,8 @@
     <string name="title_core">Module Title</string>
     <string name="notes">Notes</string>
     <string name="fab_add_note">fabAddNote</string>
+    <string name="text_add_notes">Add Notes</string>
+    <string name="text_title">Title</string>
+    <string name="text_type_somethings">Type somethings...</string>
 
 </resources>

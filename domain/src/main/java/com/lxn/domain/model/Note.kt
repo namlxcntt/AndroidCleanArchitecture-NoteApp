@@ -7,7 +7,7 @@ package com.lxn.domain.model
  * For all issue contact me : namlxcntt@gmail.com
  */
 data class Note(
-    var uid: Int,
+    var uid: Int = 0,
     var date: Long?,
     var title: String?,
     var description: String?,
