@@ -40,6 +40,8 @@ Data will be the place to manage data sources. can be from network, database as 
 ---
 ## Sample App
 ![This is an image](https://github.com/namlxcntt/NoteApp/blob/main/images/demo-app.gif?raw=true)
+
+
 This is the notes app, which is the basic kind of app. Due to the limited time, the application has only 2 main functions, viewing the list of notes and creating notes, which are stored in Sqlite.
 ----
 # Discussions
