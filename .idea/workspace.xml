@@ -14,25 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8b5df2-001c-4bf3-a599-e26517b59642" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/di/RepositoryModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/addnote/AddNoteActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/addnote/AddNoteViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/main/NotesAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_item_note.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_note.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_note.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/local/model/NoteCacheEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/mapper/NoteMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/model/Note.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/repository/NoteRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/repository/NoteRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/usecase/AddNote.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/usecase/GetAllNotes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/exception/Failure.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/functional/Either.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/usecase/UseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/utils/Extensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/utils/ObserveUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/utils/DateUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -44,69 +26,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/application/NoteApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/application/NoteApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/di/DatabaseModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/di/DatabaseModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/main/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/main/MainViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/addnote/AddNoteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/addnote/AddNoteActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/main/NotesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nlx/noteappkotlin/features/main/NotesAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/7.0.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DependenciesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DependenciesKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DevLibraries$Versions.class" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DevLibraries$Versions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DevLibraries.class" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/DevLibraries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/Libraries.class" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/Libraries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/SubModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/SubModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/TestLibraries$Versions.class" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/TestLibraries$Versions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/TestLibraries.class" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/classes/kotlin/main/TestLibraries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/libs/buildSrc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/libs/buildSrc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/Note.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/NoteAppDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/local/database/NoteAppDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/NoteDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/local/dao/NoteDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/core/view/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/core/view/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/core/viewmodel/BaseViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/src/main/java/com/lxn/platform/core/viewmodel/BaseViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/local/model/NoteCacheEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/lxn/data/local/model/NoteCacheEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/model/Note.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/lxn/domain/model/Note.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/platform/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

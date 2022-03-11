@@ -8,7 +8,7 @@ package com.lxn.domain.model
  */
 data class Note(
     var uid: Int,
-    var date: String?,
+    var date: Long?,
     var title: String?,
     var description: String?,
 )

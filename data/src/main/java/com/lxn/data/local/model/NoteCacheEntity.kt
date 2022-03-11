@@ -13,7 +13,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "note_cache")
 data class NoteCacheEntity(
     @PrimaryKey(autoGenerate = true) var uid: Int,
-    @ColumnInfo(name = "date") var date: String?,
+    @ColumnInfo(name = "date") var date: Long?,
     @ColumnInfo(name = "title") var title: String?,
     @ColumnInfo(name = "description") var description: String?,
 )

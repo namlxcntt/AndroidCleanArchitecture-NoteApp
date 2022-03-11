@@ -12,7 +12,7 @@ class AddNoteActivity : BaseActivity<ActivityAddNoteBinding, AddNoteViewModel>(A
 
     override fun addViewListener() {
         super.addViewListener()
-        viewModel.addNotes(Note(155,"11/3/2022","Namlxcntt","Namlxcntt"))
+        viewModel.addNotes(Note(155,System.currentTimeMillis(),"Add Note","Something else"))
     }
 
     override fun onViewLoaded() {

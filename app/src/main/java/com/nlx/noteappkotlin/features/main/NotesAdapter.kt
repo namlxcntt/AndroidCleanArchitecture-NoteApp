@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.lxn.domain.model.Note
+import com.lxn.platform.utils.DateUtils
 import com.lxn.platform.utils.toViewBinding
 import com.nlx.noteappkotlin.databinding.ItemNoteBinding
 import javax.inject.Inject
@@ -38,12 +39,18 @@ class NotesAdapter @Inject constructor() : RecyclerView.Adapter<NotesAdapter.Not
         return listNotes.size
     }
 
-    inner class NoteViewHolder(itemNoteBinding: ItemNoteBinding) : RecyclerView.ViewHolder(itemNoteBinding.root) {
+    inner class NoteViewHolder(private val itemNoteBinding: ItemNoteBinding) : RecyclerView.ViewHolder(itemNoteBinding.root) {
         fun bindData(position: Int) {
-
+            val data = listNotes[position]
+            itemNoteBinding.apply {
+                tvTitle.text = data.title
+                tvDays.text = DateUtils.getCurrentDate(data.date ?: System.currentTimeMillis())
+                tvDescription.text = data.description
+            }
         }
     }
 }
+
 class GridItemDecoration(
     private val spacing: Int,
     private val spanCount: Int,
