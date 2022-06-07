@@ -46,3 +46,4 @@ This is the notes app, which is the basic kind of app. Due to the limited time, 
 ----
 # Discussions
 I hope that my knowledge will help everyone, for any problems and exchanges, please contact me via email: namlxcntt@gmail.com
+ <3 <3 <3
