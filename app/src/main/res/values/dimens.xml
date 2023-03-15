@@ -24,6 +24,6 @@
     <dimen name="text_size_larges">24sp</dimen>
     <dimen name="text_size_big">32sp</dimen>
     <dimen name="text_size_very_big">40sp</dimen>
-    <dimen name="text_size_note_header">43sp</dimen>
+    <dimen name="text_size_note_header">30sp</dimen>
 
 </resources>

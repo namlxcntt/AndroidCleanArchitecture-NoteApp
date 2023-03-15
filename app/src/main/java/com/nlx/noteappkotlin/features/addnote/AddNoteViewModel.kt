@@ -1,11 +1,10 @@
 package com.nlx.noteappkotlin.features.addnote
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.lxn.domain.model.Note
-import com.lxn.domain.usecase.AddNote
+import com.lxn.domain.usecase.AddNoteUseCase
 import com.lxn.platform.core.viewmodel.BaseViewModel
 import com.lxn.platform.functional.onFailure
 import com.lxn.platform.functional.onSuccess
@@ -21,15 +20,18 @@ import javax.inject.Inject
 @HiltViewModel
 class AddNoteViewModel
 @Inject constructor(
-    private val addNote: AddNote
+    private val addNoteUseCase: AddNoteUseCase
 ) : BaseViewModel() {
     private val _addNoteSuccess: MutableLiveData<Boolean> = MutableLiveData()
 
     val addNoteSuccess: LiveData<Boolean> get() = _addNoteSuccess
 
-    fun addNotes(note: Note) = addNote(params = note, viewModelScope) {
+    fun addNotes(note: Note) = addNoteUseCase(params = note, viewModelScope) {
         it.onSuccess {
             handleAddNote()
+        }
+        it.onFailure {
+            _addNoteSuccess.value = false
         }
     }
 
